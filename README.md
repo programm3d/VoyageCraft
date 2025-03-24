@@ -10,16 +10,8 @@ Frontend
 
 ## Deployed App
 
-Frontend: [https://voyagecraft-planner.web.app](https://voyagecraft-planner.web.app)
+Frontend: [https://voyagecraft.netlify.app/](https://voyagecraft.netlify.app/)
 Database: Firebase Firestore (No direct URL, managed through Firebase Console)
-
-## Video Walkthrough of the project
-
-[Insert Link to a 1-3 minute video walkthrough of the application features here]
-
-## Video Walkthrough of the codebase
-
-[Insert Link to a 1-5 minute video walkthrough of the codebase here]
 
 ## Features
 
@@ -75,7 +67,6 @@ Database: Firebase Firestore (No direct URL, managed through Firebase Console)
 4.  **View Details:** Click on an itinerary to view its details.
 5.  **Modify Itinerary:** Modify or delete itinerary details as needed.
 
-Include screenshots as necessary.
 
 ## Credentials
 
