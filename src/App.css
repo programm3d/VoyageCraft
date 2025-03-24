@@ -1,42 +1,229 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Use this color Pallete: 
+#210F37, #4F1C51, #A55B4B, #DCA06D */
+
+/* General header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #210f37; /* Deep purple background */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.5rem;
+}
+
+.logo1 {
+  color: #4f1c51; /* Dark magenta */
+  font-weight: bold;
+}
+
+.logo2 {
+  color: #a55b4b; /* Warm brownish-red */
+  margin-left: 0.3rem;
+  font-style: italic;
+}
+
+/* Navigation bar styling */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #dca06d; /* Light brownish-yellow */
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #a55b4b; /* Highlight color on hover */
+}
+
+.active {
+  border-bottom: 2px solid #a55b4b; /* Indicate active link */
+}
+
+/* Login container styling */
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
   padding: 2rem;
+  background-color: #210f37; /* Deep purple background */
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #dca06d; /* Light brownish-yellow text */
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Heading styling */
+.login-heading {
+  margin-bottom: 1.5rem;
+  color: #4f1c51; /* Dark magenta heading */
+  font-size: 1.8rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Error message styling */
+.error-message {
+  color: #a55b4b; /* Warm brownish-red for error messages */
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Form styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.card {
-  padding: 2em;
+.form-group {
+  text-align: left;
 }
 
-.read-the-docs {
-  color: #888;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #dca06d; /* Light brownish-yellow label */
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #4f1c51; /* Dark magenta border */
+  border-radius: 4px;
+  background-color: #210f37; /* Same deep purple as background */
+  color: #dca06d; /* Text matches theme */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #a55b4b; /* Highlighted border */
+}
+
+/* Button styling */
+.login-button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #a55b4b; /* Warm brownish-red button */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #4f1c51; /* Dark magenta on hover */
+}
+
+/* Signup link styling */
+.signup-link {
+  margin-top: 1rem;
+  color: #dca06d; /* Light brownish-yellow text */
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #a55b4b; /* Highlight link */
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Signup container styling */
+.signup-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #210F37; /* Deep purple background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #DCA06D; /* Light brownish-yellow text */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Heading styling */
+.signup-heading {
+  margin-bottom: 1.5rem;
+  color: #4F1C51; /* Dark magenta heading */
+  font-size: 1.8rem;
+}
+
+/* Error message styling */
+.error-message {
+  color: #A55B4B; /* Warm brownish-red for error messages */
+  margin-bottom: 1rem;
+}
+
+/* Form styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #DCA06D; /* Light brownish-yellow label */
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #4F1C51; /* Dark magenta border */
+  border-radius: 4px;
+  background-color: #210F37; /* Same deep purple as background */
+  color: #DCA06D; /* Text matches theme */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #A55B4B; /* Highlighted border */
+}
+
+/* Button styling */
+.signup-button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #A55B4B; /* Warm brownish-red button */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background-color: #4F1C51; /* Dark magenta on hover */
+}
+
+/* Login link styling */
+.login-link {
+  margin-top: 1rem;
+  color: #DCA06D; /* Light brownish-yellow text */
+}
+
+.login-link a {
+  text-decoration: none;
+  color: #A55B4B; /* Highlight link */
+}
+
+.login-link a:hover {
+  text-decoration: underline;
 }
